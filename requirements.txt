@@ -1,20 +1,7 @@
-# Telegram‑бот
-aiogram==3.20.0
-
-# Веб‑фреймворк
-fastapi==0.95.2
-
-# ASGI‑сервер (зависит от starlette, но берётся автоматически)
-uvicorn[standard]==0.22.0
-
-# Шаблонизатор
-jinja2==3.1.2
-
-# Pydantic v1, требуемый fastapi 0.95.x
-pydantic==1.10.12
-
-# Обработка multipart в FastAPI
-python-multipart==0.0.6
-
-# Для .env (опционально)
-python-dotenv==1.0.0
+aiogram==3.9.0
+fastapi==0.110.0
+uvicorn==0.29.0
+jinja2==3.1.3
+itsdangerous==2.1.2
+pydantic==2.6.4
+python-multipart==0.0.9
