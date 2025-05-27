@@ -4,17 +4,17 @@ aiogram==3.20.0
 # Веб‑фреймворк
 fastapi==0.95.2
 
-# ASGI‑сервер
+# ASGI‑сервер (зависит от starlette, но берётся автоматически)
 uvicorn[standard]==0.22.0
 
 # Шаблонизатор
 jinja2==3.1.2
 
-# Работа с .env (если потребуется)
-python-dotenv==1.0.0
+# Pydantic v1, требуемый fastapi 0.95.x
+pydantic==1.10.12
 
-# Pydantic (FastAPI зависимость)
-pydantic==2.3.0
-
-# Для обработки multipart/form-data (Form и File в FastAPI)
+# Обработка multipart в FastAPI
 python-multipart==0.0.6
+
+# Для .env (опционально)
+python-dotenv==1.0.0
