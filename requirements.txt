@@ -1,5 +1,5 @@
 # Telegram‑бот
-aiogram==3.4.3
+aiogram==3.20.0
 
 # Веб‑фреймворк
 fastapi==0.95.2
@@ -13,7 +13,7 @@ jinja2==3.1.2
 # Работа с .env (если потребуется)
 python-dotenv==1.0.0
 
-# Pydantic (FastAPI зависимость, но можно зафиксировать)
+# Pydantic (FastAPI зависимость)
 pydantic==2.3.0
 
 # Для обработки multipart/form-data (Form и File в FastAPI)
