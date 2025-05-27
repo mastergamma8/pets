@@ -1,0 +1,20 @@
+# Telegram‑бот
+aiogram==3.4.3
+
+# Веб‑фреймворк
+fastapi==0.95.2
+
+# ASGI‑сервер
+uvicorn[standard]==0.22.0
+
+# Шаблонизатор
+jinja2==3.1.2
+
+# Работа с .env (если потребуется)
+python-dotenv==1.0.0
+
+# Pydantic (FastAPI зависимость, но можно зафиксировать)
+pydantic==2.3.0
+
+# Для обработки multipart/form-data (Form и File в FastAPI)
+python-multipart==0.0.6
