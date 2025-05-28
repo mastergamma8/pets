@@ -1,11 +1,14 @@
 import asyncio
+import os
 
 from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from uvicorn import run as uv_run
 
-from aiogram import Bot, Dispatcher, types
+from aiogram import Dispatcher, types
+from aiogram.client.bot import DefaultBotProperties
+from aiogram import Bot
 from aiogram.types import KeyboardButton, ReplyKeyboardMarkup, WebAppInfo
 from aiogram.fsm.storage.memory import MemoryStorage
 
@@ -29,7 +32,10 @@ async def webapp(request: Request, tg_id: int):
     })
 
 # — AIORGRAM BOT SETUP —
-bot = Bot(token=BOT_TOKEN, parse_mode="HTML")
+bot = Bot(
+    token=BOT_TOKEN,
+    default=DefaultBotProperties(parse_mode="HTML")
+)
 dp = Dispatcher(storage=MemoryStorage())
 
 @dp.message(commands=["start"])
