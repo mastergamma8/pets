@@ -10,7 +10,7 @@ from aiogram.types import KeyboardButton, ReplyKeyboardMarkup, WebAppInfo
 from aiogram.fsm.storage.memory import MemoryStorage
 
 # — CONFIGURATION —
-BOT_TOKEN = "ВАШ_ТОКЕН"
+BOT_TOKEN = "7707637937:AAGiteK3cHH6CXxpzkYvkzvIibRA131BUPs"
 
 # — FASTAPI SETUP —
 app = FastAPI()
