@@ -11,6 +11,9 @@ from aiogram.client.bot import DefaultBotProperties
 from aiogram import Bot
 from aiogram.types import KeyboardButton, ReplyKeyboardMarkup, WebAppInfo
 from aiogram.fsm.storage.memory import MemoryStorage
+from aiogram.filters import Command
+from aiogram import types
+
 
 # — CONFIGURATION —
 BOT_TOKEN = "7707637937:AAGiteK3cHH6CXxpzkYvkzvIibRA131BUPs"
@@ -38,7 +41,7 @@ bot = Bot(
 )
 dp = Dispatcher(storage=MemoryStorage())
 
-@dp.message(commands=["start"])
+@dp.message(Command("start"))
 async def cmd_start(msg: types.Message):
     kb = ReplyKeyboardMarkup(resize_keyboard=True)
     kb.add(
